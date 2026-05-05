@@ -16,3 +16,7 @@ exploratórios aplicando técnicas de Machine Learning supervisionado e não
 supervisionado
 
 ## Base de dados: Base de dados - MLET Fase 3 https://drive.google.com/drive/folders/1aS7exW5N0qq1uIxvIBcAfc18OHojOMjj?usp=sharing
+
+
+https://colab.research.google.com/drive/1wlW7l0VOphgDueQYSjvquIbQVZSVhZdi?usp=sharing
+
