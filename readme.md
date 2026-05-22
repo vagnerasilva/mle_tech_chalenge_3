@@ -1,12 +1,15 @@
-# TECH CHALLENGE 3
+
+# MLE Tech Challenge — Fase 3 (Pós Eng. ML)
 
 
-**Tech Challenge** é o projeto da fase que engloba os conhecimentos obtidos
-em todas as disciplinas da fase. Esta é uma atividade que, a princípio, deve ser
-desenvolvida em grupo. É importante atentar-se ao prazo de entrega já que tratase de uma atividade obrigatória, uma vez que sua pontuação se refere a 90% da
-nota final.
+# O projeto
+- Objetivo: desenvolver uma solução com modelos supervisionados e não-supervisionados para analisar e predizer atrasos/cancelamentos de voos nos EUA, conforme proposta do Tech Challenge Fase 3.
+- Entrada: bases CSV (flights.csv, airports.csv, airlines.csv)[BAIXAR AQUI](https://drive.google.com/drive/folders/1aS7exW5N0qq1uIxvIBcAfc18OHojOMjj?usp=sharing) carregadas via Google Drive (Colab).
+- Entrega: notebook principal  [`fase_3_pós_eng_ml.ipynb`](https://github.com/vagnerasilva/mle_tech_chalenge_3/blob/main/fase_3_p%C3%B3s_eng_ml.ipynb)com EDA, pré-processamento, modelos, clusterização, detecção de anomalias e visualizações (incl. mapas Folium).
 
-## O problema
+
+
+# O problema
 
 O transporte aéreo é uma parte vital da infraestrutura global, mas os
 atrasos de voos impactam milhões de passageiros todos os anos. Neste projeto,
@@ -15,19 +18,13 @@ sobre voos nos EUA para desenvolver análises e modelos preditivos e/ou
 exploratórios aplicando técnicas de Machine Learning supervisionado e não
 supervisionado
 
-## Base de dados: Base de dados - MLET Fase 3 
-
+# Base de dados: Base de dados - MLET Fase 3 
 
 https://colab.research.google.com/drive/1wlW7l0VOphgDueQYSjvquIbQVZSVhZdi?usp=sharing
 
-# MLE Tech Challenge — Fase 3 (Pós Eng. ML)
 
-Resumo do projeto
-- Objetivo: desenvolver uma solução com modelos supervisionados e não-supervisionados para analisar e predizer atrasos/cancelamentos de voos nos EUA, conforme proposta do Tech Challenge Fase 3.
-- Entrada: bases CSV (flights.csv, airports.csv, airlines.csv)[BAIXAR AQUI](https://drive.google.com/drive/folders/1aS7exW5N0qq1uIxvIBcAfc18OHojOMjj?usp=sharing) carregadas via Google Drive (Colab).
-- Entrega: notebook principal `fase_3_pós_eng_ml.ipynb` com EDA, pré-processamento, modelos, clusterização, detecção de anomalias e visualizações (incl. mapas Folium).
 
-Principais etapas implementadas (notebook)
+# Principais etapas implementadas (notebook)
 1. Setup e carregamento de dados
    - Montagem do Google Drive e leitura de `flights.csv`, `airports.csv`, `airlines.csv`.
 2. EDA (exploratória)
@@ -60,11 +57,11 @@ Principais etapas implementadas (notebook)
     - Limitações (data leakage, desbalanceamento, interpretabilidade, estacionariedade).
     - Próximos passos sugeridos: SHAP/LIME, tunagem (Grid/Random/Optuna), balanceamento (SMOTE/ADASYN), mais algoritmos de clusterização (DBSCAN, GMM), engenharia adicional (feriados, clima).
 
-Arquivos principais
+# Arquivos principais
 - fase_3_pós_eng_ml.ipynb — notebook com toda a análise e modelos.
 - (opcionais) eda_flights_plots.png, eda_flights_avancado_plots.png, xgboost_classification_plots.png, lgbm_classification_plots.png, randomforest_classification_plots.png — figuras geradas.
 
-Como reproduzir (Colab / local Mac)
+# Como reproduzir (Colab / local Mac)
 1. Montar Google Drive (Colab): ver célula inicial do notebook.
 2. Garantir os CSVs em `drive/MyDrive/POSFIAP/`:
    - flights.csv, airports.csv, airlines.csv
@@ -73,13 +70,13 @@ Como reproduzir (Colab / local Mac)
 4. Executar células do notebook na ordem (ou reiniciar e rodar todas).
 5. Para geração dos mapas interativos, abrir o notebook em ambiente com suporte a displays (Colab/Jupyter).
 
-Principais resultados métricos (ex.: exemplos presentes no notebook)
+## Principais resultados métricos (ex.: exemplos presentes no notebook)
 - ROC-AUC, Average Precision e classification_report para XGBoost, LightGBM e RandomForest (ver células de avaliação para valores exatos).
 - Silhouette Score para KMeans (máximo observado em K=4).
 - Lists de top rotas / aeroportos / aeronaves com maior atraso médio.
 
-Dependências (resumo)
-- Python 3.8+
+## Dependências (resumo)
+- Python 3.9+
 - pandas, numpy, matplotlib, seaborn, scipy
 - scikit-learn, xgboost, lightgbm, folium
 - opcional: jupyter / colab
@@ -90,6 +87,6 @@ Próximos passos sugeridos (prioritários)
 - Validar com dados temporais (train/validation por time-splits) e pipeline para deploy/monitoramento.
 - Incluir fontes externas (clima, feriados) e testar estratégias de balanceamento.
 
-Contato / Observações
+# Contato / Observações
 - Notebook organizado para execução passo-a-passo; muitas células incluem verificações para reexecução isolada após restart do kernel.
 - Para dúvidas específicas sobre execução ou métricas, abrir issue ou entrar em contato pelo repositório.
