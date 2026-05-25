@@ -32,6 +32,7 @@ Este projeto implementa uma **solução analítica integrada** para prever e ana
 - [Dependências](#dependências)
 - [Referências e Documentação](#referências-e-documentação)
 - [Contato e Observações](#contato-e-observações)
+- [Video de apresentacao]()
 
 ---
 
@@ -66,6 +67,8 @@ Desenvolver e validar uma **solução preditiva e exploratória** que:
 4. **Mapeia rotas críticas** — visualizando hot-spots geográficos e infraestruturais.
 5. **Oferece acionabilidade** — com ROI estimado e recomendações priorizadas.
 
+## **Video de Apresentação do Projeto:**
+[Video](https://youtu.be/8Pi0fFnyqWg?si=EtiX1Wl_5E-zgrAK)
 ---
 
 ## ✨ Diferenciais Implementados (Pontuação Extra)
@@ -538,6 +541,8 @@ Para dúvidas, erros de execução ou sugestões:
 - ✅ Documentação completa (README, roteiro, comentários).
 
 ---
+## **Video de Apresentação do Projeto:**
+[Video](https://youtu.be/8Pi0fFnyqWg?si=EtiX1Wl_5E-zgrAK)
 
 **Última Atualização:** 25 de maio de 2026  
 
