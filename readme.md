@@ -32,6 +32,7 @@ Este projeto implementa uma **solução analítica integrada** para prever e ana
 - [Dependências](#dependências)
 - [Referências e Documentação](#referências-e-documentação)
 - [Contato e Observações](#contato-e-observações)
+- [Video de apresentacao]()
 
 ---
 
@@ -49,7 +50,7 @@ O transporte aéreo é vital para a infraestrutura global, mas os atrasos impact
 - **Infraestrutura crítica** (aeroportos, ATC, operadores precisam de inteligência preditiva).
 
 **Desafios Técnicos:**
-- Dataset massivo (~5.7M voos) com 74 variáveis originais.
+- Dataset massivo (~5.7M voos) com 31 variáveis originais.
 - Desbalanceamento de classes (65% no horário vs. 35% atrasados).
 - Múltiplas causas de atrasos (operacionais, climáticas, cascata).
 - Necessidade de interpretabilidade para ação operacional.
@@ -66,6 +67,8 @@ Desenvolver e validar uma **solução preditiva e exploratória** que:
 4. **Mapeia rotas críticas** — visualizando hot-spots geográficos e infraestruturais.
 5. **Oferece acionabilidade** — com ROI estimado e recomendações priorizadas.
 
+## **Video de Apresentação do Projeto:**
+[Video](https://youtu.be/8Pi0fFnyqWg?si=EtiX1Wl_5E-zgrAK)
 ---
 
 ## ✨ Diferenciais Implementados (Pontuação Extra)
@@ -97,8 +100,8 @@ Desenvolver e validar uma **solução preditiva e exploratória** que:
 
 **Estatísticas Chave:**
 - **Atrasos na chegada:** Média 6.8 ± 31.5 min; máximo 2,590 min (43h 50min).
-- **Cancelamentos:** 81,754 voos (1.43%) — removidos.
-- **Desviados:** 3,068 voos (0.05%) — removidos.
+- **Cancelamentos:** 89,884 voos (1.54%) — removidos.
+- **Desviados:** 15,187 voos (0.26%) — removidos.
 - **Dataset útil:** 5,650,647 voos não-cancelados.
 
 **[Baixar Dados](https://drive.research.google.com/drive/1wlW7l0VOphgDueQYSjvquIbQVZSVhZdi?usp=sharing)**
@@ -207,7 +210,7 @@ Desenvolver e validar uma **solução preditiva e exploratória** que:
 - Verificação de integridade (shape, dtypes, nulidade).
 
 ### 2. EDA — Análise Exploratória Profunda (⭐ 310s)
-- **Visão geral:** 5.7M voos, 74 colunas, 1.43% cancelamentos.
+- **Visão geral:** 5.7M voos, 31 colunas, 1.54% cancelamentos.
 - **Distribuições:** Histograma de ARRIVAL_DELAY (bimodal: 0 vs. cauda).
 - **Padrões sazonais:** Verão/Inverno (+10 min) vs. Outono (-2 min).
 - **Padrões horários:** Tarde (17h-19h) 3x pior que madrugada.
@@ -373,21 +376,6 @@ mle_tech_chalenge_3/
 ├── doc/
 │   ├── Roteiro_Apresentacao_Atrasos_Voos.md (script de apresentação)
 │   └── (diagramas, referências)
-├── plots/ (gerado)
-│   ├── eda_flights_plots.png
-│   ├── eda_flights_avancado_plots.png
-│   ├── xgboost_classification_plots.png
-│   ├── xgboost_cv_validation.png ✅
-│   ├── xgboost_feature_importance.png ✅
-│   ├── xgboost_threshold_optimization.png ✅
-│   ├── lgbm_classification_plots.png
-│   ├── randomforest_classification_plots.png
-│   ├── kmeans_silhouette_analysis.png
-│   ├── kmeans_pca_clusters.png
-│   ├── isolation_forest_anomalies.png
-│   ├── folium_map_all_routes.html ✅ (interativo)
-│   ├── folium_map_top10_routes.html ✅ (interativo)
-│   └── folium_map_anomalies.html ✅ (interativo)
 └── .gitignore
 ```
 
@@ -397,7 +385,7 @@ mle_tech_chalenge_3/
 
 ### Opção 1: Google Colab (Recomendado)
 
-1. **Abrir Notebook:** [MLET Fase 3 Colab](https://colab.research.google.com/drive/1wlW7l0VOphgDueQYSjvquIbQVZSVhZdi?usp=sharing)
+1. **Abrir Notebook:** [MLET Fase 3 Colab](https://colab.research.google.com/drive/1tbVRmtjZsFeNjIafp0Dj0FUCFqRlDC17?usp=sharing)
 2. **Montar Google Drive:** Executar célula inicial (`drive.mount("/content/drive")`).
 3. **Verificar CSVs:** Garantir `drive/MyDrive/POSFIAP/`:
    - `flights.csv`
@@ -506,7 +494,7 @@ pip install -r requirements.txt
 ### Autor
 - **Nome:** Vagner Antonio da Silva
 - **GitHub:** [vagnerasilva](https://github.com/vagnerasilva)
-- **Nome:** Cecilia
+- **Nome:** Cecilia Aparecida Santos Silvalia
 - **GitHub:** [ceciliaass](https://github.com/ceciliaass)
 - **Nome:** Pedro Henrique Souza
 - **GitHub:** [pedrohemmel](https://github.com/pedrohemmel)
@@ -553,7 +541,9 @@ Para dúvidas, erros de execução ou sugestões:
 - ✅ Documentação completa (README, roteiro, comentários).
 
 ---
+## **Video de Apresentação do Projeto:**
+[Video](https://youtu.be/8Pi0fFnyqWg?si=EtiX1Wl_5E-zgrAK)
 
-**Última Atualização:** 21 de maio de 2026  
+**Última Atualização:** 25 de maio de 2026  
 
 
