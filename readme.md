@@ -494,7 +494,7 @@ pip install -r requirements.txt
 ### Autor
 - **Nome:** Vagner Antonio da Silva
 - **GitHub:** [vagnerasilva](https://github.com/vagnerasilva)
-- **Nome:** Cecilia
+- **Nome:** Cecilia Aparecida Santos Silvalia
 - **GitHub:** [ceciliaass](https://github.com/ceciliaass)
 - **Nome:** Pedro Henrique Souza
 - **GitHub:** [pedrohemmel](https://github.com/pedrohemmel)
