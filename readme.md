@@ -546,4 +546,8 @@ Para dúvidas, erros de execução ou sugestões:
 
 **Última Atualização:** 25 de maio de 2026  
 
+# Notas
+<img width="2170" height="604" alt="image" src="https://github.com/user-attachments/assets/a09da944-8b2e-440d-9f86-4093457c1990" />
+
+
 
